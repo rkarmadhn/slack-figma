@@ -39,8 +39,23 @@ nav {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 769px) {
   .h-screen-100 {
-    height: 100vh;
+    min-height: 100vh;
+    z-index: 1;
   }
+  .h-screen-50 {
+    min-height: 50vh;
+    z-index: 1;
+  }
+  .h-screen-75 {
+    min-height: 75vh;
+    z-index: 1;
+  }
+  .btn-custom {
+    border-radius: 14px;
+    padding: 14px 24px;
+  }
+
+  /* Navigation */
   nav .container {
     display: flex;
     align-items: center;
@@ -64,10 +79,8 @@ nav {
   .btn-menu {
     display: none;
   }
-  .btn-custom {
-    border-radius: 14px;
-    padding: 14px 24px;
-  }
+
+  /* Hero */
   .hero-left {
     display: block;
     align-items: center;
@@ -79,11 +92,6 @@ nav {
   .hero-left * {
     margin-bottom: 24px !important;
   }
-  /* Floating */
-}
-
-/* Property */
-@media (min-width: 769px) {
   .property-tab-1 {
     position: absolute;
     top: 165px;
@@ -95,6 +103,74 @@ nav {
     top: 215px;
     left: 31px;
     z-index: 2;
+  }
+
+  /* Company */
+  #company .container {
+    padding: 38px 12px;
+  }
+  #company .container h4 {
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.5%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  #company .container h4 span {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 51px;
+  }
+  .company-sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    margin: 20px 0;
+  }
+  .company-sponsor img {
+    width: 74px;
+    height: 74px;
+  }
+
+  /* Features */
+  #features {
+    padding: 42px 0;
+  }
+  #features .container {
+    padding: 28px 12px;
+  }
+  .box-left {
+    border-left: 4px solid #000;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 10px 0 0 10px;
+  }
+  .box-right {
+    border-right: 4px solid #000;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    border-radius: 0 10px 10px 0;
+  }
+  .property-features .img-left {
+    width: 100%;
+    height: 100%;
+    margin: 23px -16px;
+  }
+  .property-features .img-right {
+    width: 100%;
+    height: 100%;
+    margin: 23px 16px;
+  }
+  .features-text {
+    margin: 51px 64px;
+  }
+  .features-text * {
+    margin-bottom: 10px;
+  }
+  .btn-features {
+    border: 2px solid #000;
+    border-radius: 14px;
   }
 }
 
